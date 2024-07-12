@@ -5,7 +5,7 @@
 ### you wanted to know the ID of the user : id -u ......> you will get some id like ...1001
 ### but by default root user ID is:id -u .....> 0
 
-USERID=${id -u}
+USERID=$(id -u)
 
 if [ USERID -eq 0]
 then
