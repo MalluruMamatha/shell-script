@@ -34,3 +34,10 @@ echo "please enter the password"
 read password
 echo "my username is: $username , my password is: $password"
 
+# if you dont want to see u r password what your prompting then add -s
+
+echo "please enter the username"
+read -s username
+echo "please enter the password"
+read -s password
+echo "my username is: $username , my password is: $password"
