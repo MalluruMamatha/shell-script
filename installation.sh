@@ -7,9 +7,19 @@
 
 USERID=$(id -u)
 
-if [ USERID -eq 0]
+if [ $USERID -eq 0]
 then
- echo "install mysql -y"
+ echo "Please run this script with root access"
+ exit 1 ## means manually we are asking to exit if error comes
 else
- echo "Need root access to install mysql"
+ echo "you are a super user"
+fi
+dnf install mysql -y
+
+if [ $? -nq 0]
+then
+    echo "installation is failed"
+    exit 1
+else
+    echo "installation is success"
 fi
