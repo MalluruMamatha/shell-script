@@ -23,3 +23,13 @@ then
 else
     echo "installation is success"
 fi
+
+dnf install git -y
+
+if [ $? -ne 0 ]
+then
+    echo "Installation of git...FAILURE"
+    exit 1
+else
+    echo "Installation of Git...SUCCESS"
+fi
