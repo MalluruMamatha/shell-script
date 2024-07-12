@@ -1,9 +1,4 @@
-# echo "get all variables in a list: $@"
-# echo "
+echo "get all variables in a list: $@"
+echo "get the number of variables you passes: $#"
 
 
-echo "please enter the username"
-read -s username
-echo "please enter the password"
-read -s password
-echo "my username is: $username , my password is: $password"
