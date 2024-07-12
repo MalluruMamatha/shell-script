@@ -13,3 +13,13 @@ echo "$PERSON1: Hi,$PERSON2,how are you?"
 echo "$PERSON2: Hi,$PERSON1,i am good."
 echo "$PERSON1: How is your day?"
 echo "$PERSON2: I spend my day very well"
+
+### declering the variables argument level
+
+PERSON1=$1
+PERSON2=$1
+
+echo "$PERSON1: Hi,$PERSON2,how are you?"
+echo "$PERSON2: Hi,$PERSON1,i am good."
+echo "$PERSON1: How is your day?"
+echo "$PERSON2: I spend my day very well"
