@@ -7,7 +7,7 @@
 
 USERID=$(id -u)
 
-if [ $USERID -eq 0]
+if [ $USERID -ne 0]
 then
  echo "Please run this script with root access"
  exit 1 ## means manually we are asking to exit if error comes
@@ -16,7 +16,7 @@ else
 fi
 dnf install mysql -y
 
-if [ $? -nq 0]
+if [ $? -ne 0]
 then
     echo "installation is failed"
     exit 1
